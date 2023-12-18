@@ -1,7 +1,18 @@
-let users = '{"name": "samrat","age": "23", "gender": "male" }'
+//json.parse;
 
-//console.log(userData)
+// let users = '{"name": "samrat","age": "23", "gender": "male" }'
+// let user = JSON.parse(users);
+// console.log(user["name"]);
 
 
-let user = JSON.parse(users);
-console.log(user["name"]);
+//json.stringify()
+
+
+let object = {
+    name: "samrat",
+    age: "25",
+    gender: "male"
+}
+
+const finalString = JSON.stringify(object);
+console.log(finalString);
