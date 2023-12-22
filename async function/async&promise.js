@@ -1,17 +1,28 @@
+// function samAsyncFunction(){
+//     let p = new Promise(function(resolve){
+//         resolve("hi there!")
+//     })
+//     return p;
+// }
 
+// function main(){
+//     samAsyncFunction().then(function(value){
+//         console.log(value);
+//     })
+// }
 
-function samAsyncFunction(){
-    let p = new Promise(function(resolve){
-        resolve("hi there!")
-    })
-    return p;
+// main();
+
+function samAsyncFunction() {
+  let p = new Promise(function (resolve) {
+    resolve("hi there!");
+  });
+  return p;
 }
 
-function main(){
-    samAsyncFunction().then(function(value){
-        console.log(value);
-        //return value;
-    })
+async function main() {
+  let value = await samAsyncFunction();
+  console.log(value);
 }
 
 main();
