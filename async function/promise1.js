@@ -6,5 +6,5 @@ function callback(){
     console.log(a)
 }
 
-//console.log(a)
+console.log(a)
 a.then(callback);
